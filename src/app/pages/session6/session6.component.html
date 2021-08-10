@@ -1,0 +1,77 @@
+<div class="contenedor">
+    <div class="ventana">
+        <p>SESION6</p>
+        <p><br></p>
+        <p>LAZY_LOAD: carga peresoza, evita cargar todos los componentes al inicio</p>
+        <p>GUARDS: vigilante de control de acceso a ciertos modulos</p>
+        <p><br></p>
+        <p>tipos</p>
+        <p>- CanActivate: mira si el usuario puede acceder a una determinada pagina</p>
+        <p>- CanActivateChild: mira si el usuario puede acceder a las paginas hijas de una</p>
+        <p>&nbsp; determinada ruta</p>
+        <p>- CanDeactivate: mira si el usuario sale de una pagina ejecutara un evento</p>
+        <p>- CanLoad: sirve evitar cargar modulos que no se necesita ingresar en el momento</p>
+        <p><br></p>
+        <p>npm install jquery</p>
+        <p>npm install popper.js</p>
+        <p>npm install bootstrap</p>
+        <p>npm install font-awesome</p>
+        <p><br></p>
+        <p><br></p>
+        <p>&quot;assets&quot;: [</p>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;src/favicon.ico&quot;,</p>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;src/assets&quot;</p>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ],</p>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;styles&quot;: [</p>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;node_modules/bootstrap/dist/css/bootstrap.min.css&quot;,</p>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;node_modules/font-awesome/css/font-awesome.css&quot;,&nbsp;</p>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;src/styles.scss&quot;</p>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ],</p>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;scripts&quot;: [</p>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;node_modules/jquery/dist/jquery.min.js&quot;, &nbsp; &nbsp; &nbsp; &nbsp;</p>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;node_modules/popper.js/dist/umd/popper.min.js&quot;, &nbsp; &nbsp; &nbsp; &nbsp;</p>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;node_modules/bootstrap/dist/js/bootstrap.min.js&quot;</p>
+        <p><br></p>
+        <p><br></p>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ]</p>
+        <p><br></p>
+        <p>Correcciones de Importacion</p>
+        <p>npm install crypto-js</p>
+        <p>npm i --save-dev @types/crypto-js</p>
+        <p>npm install</p>
+        <p><br></p>
+        <p>Acceso</p>
+        <p>Repsol01</p>
+        <p>Catalogo01</p>
+        <p><br></p>
+    </div>
+    <div class="ventana">
+
+        <h1>Rutas y Lazyload App</h1>
+
+        <ul>
+            <li><a routerLink="/auth/login">Login</a></li>
+            <li><a routerLink="/auth/registro">Registro</a></li>
+            <li><a routerLink="/auth/forgot">Forgot</a></li>
+        </ul>
+
+        <ul>
+            <li><a routerLink="/productos/agregar">agregar</a></li>
+            <li><a routerLink="/productos/editar">editar</a></li>
+            <li><a routerLink="/productos/listado">listado</a></li>
+            <li><a routerLink="/productos/producto">producto</a></li>
+        </ul>
+
+
+        <ul>
+            <li><a routerLink="/usuarios/nuevo">nuevo</a></li>
+            <li><a routerLink="/usuarios/editar">editar</a></li>
+            <li><a routerLink="/usuarios/listado">listado</a></li>
+            <li><a routerLink="/usuarios/usuario">usuario</a></li>
+        </ul>
+
+
+        <router-outlet></router-outlet>
+
+    </div>
+</div>

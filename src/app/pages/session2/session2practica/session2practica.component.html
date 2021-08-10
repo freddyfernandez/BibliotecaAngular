@@ -1,0 +1,82 @@
+<h1>Directivas</h1>
+<fieldset>
+    <h2>Ejemplos NgModel</h2>
+    <br>
+    <div>
+        <input type="text" [(ngModel)]="miNombre">
+        <p>Nombre:{{miNombre}}</p>
+    </div>
+    <div>
+        <input type="text" [(ngModel)]="apPaterno">
+        <p>Apellido Paterno:{{apPaterno | uppercase}}</p>
+    </div>
+    <div>
+        <input type="text" [(ngModel)]="apMaterno">
+        <p>Apellido Materno:{{apMaterno}}</p>
+    </div>
+    <div>
+        <input type="number" [(ngModel)]="miEdad">
+        <p>Edad:{{miEdad}}</p>
+    </div>
+
+</fieldset>
+<fieldset>
+    <h2>Ejemplos NgClass</h2>
+    <br>
+    <p [ngClass]="miClase">TEXTO 1</p>
+    <button [ngClass]="misClases">TEXTO 2</button>
+    <p [ngClass]="currentClases">TEXTO 3</p>
+
+    <button (click)="setSpecialStyle()">Click Aqui</button>
+    <div [ngStyle]="especialStyle">TEXTO4</div>
+
+    <div *ngIf="activador">Muestra Mensaje</div>
+    <div *ngIf="isNumber>0">
+        {{isNumber}}
+    </div>
+</fieldset>
+
+<fieldset>
+    <table class="mat-elevation-z8">
+
+        <thead>
+            <tr>
+                <td>Nombre</td>
+                <td>Nivel</td>
+                <td>Profesor</td>
+                <td>Escuela</td>
+            </tr>
+        </thead>
+        <tbody *ngFor="let curso of listadoCursos">
+            <td> {{curso.nombre}} </td>
+            <td> {{curso.nivel}} </td>
+            <td> {{curso.profesor}} </td>
+            <td> {{curso.escuela}} </td>
+        </tbody>
+
+
+        <!-- 
+        <ng-container matColumnDef="nombre">
+        <th mat-header-cell *matHeaderCellDef> Nombre. </th>
+        <td mat-cell *matCellDef="let element"> {{curso.nombre}} </td>
+    </ng-container>
+    <ng-container matColumnDef="nivel">
+        <th mat-header-cell *matHeaderCellDef> Nivel </th>
+        <td mat-cell *matCellDef="let element"> {{curso.nivel}} </td>
+    </ng-container>
+    <ng-container matColumnDef="profesor">
+        <th mat-header-cell *matHeaderCellDef> Profesor </th>
+        <td mat-cell *matCellDef="let element"> {{curso.profesor}} </td>
+    </ng-container>
+    <ng-container matColumnDef="escuela">
+        <th mat-header-cell *matHeaderCellDef> Escuela </th>
+        <td mat-cell *matCellDef="let element"> {{curso.escuela}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+     -->
+
+
+    </table>
+</fieldset>

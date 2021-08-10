@@ -1,0 +1,53 @@
+<div class="contenedor">
+    <div class="ventana">
+        <p>SESION 5</p>
+        <p><br></p>
+        <p>INTERFACES: son medios de estructura datos que sirven para declarar propiedades y metodos de un objeto</p>
+        <p><br></p>
+        <p>LET: declaracion de datos dentro de algun metodos,fuera de ello no es requerido</p>
+        <p>&nbsp;</p>
+        <p>OBSERVABLES:&nbsp;</p>
+        <p><br></p>
+        <p>ngOninit: se ejecuta por unica vez</p>
+        <p><br></p>
+        <p>ngOnchanges:se ejecuta varias veces</p>
+        <p>- cuando no hay input no se ejecuta el onchanges</p>
+        <p>- solo cambia los inputs cambiados</p>
+        <p>ngdoCheck:se ejecuta varias veces</p>
+        <p>- cuando no hay input se ejecuta el ngdoCheck</p>
+        <p>- solo cambia los inputs cambiados</p>
+        <p><br></p>
+        <p>ngAfterViewInit: Despues que carga la vista</p>
+        <p><br></p>
+        <p>ngAftercontentCheck: Despues del check</p>
+        <p>ngOndestroy</p>
+        <p><br></p>
+        <p>TWO-WAY BINDING: comunicacion en doble via</p>
+        <p><br></p>
+        <p>- trabaja con formsModule</p>
+        <p><br></p>
+        <p>FORMULARIOS REACTIVOS</p>
+        <p><br></p>
+        <p>npm install -g json-server</p>
+        <p>json-server --watch mocks/db.json</p>
+        <p>npm install ngx-toastr --save</p>
+        <p><br></p>
+        <p>- A&ntilde;adir estilos:&nbsp;</p>
+        <p>&quot;styles&quot;: [</p>
+        <p>&quot;src/styles.css&quot;,</p>
+        <p>&quot;node_modules/ngx-toastr/toastr.css&quot;</p>
+        <p>],</p>
+        <p><br></p>
+        <p>-Agregar el reactive formmodule,OnlyLettersDirective</p>
+    </div>
+    <div class="ventana">
+        <input [(ngModel)]="inputText" />
+        <button (click)="showInputValue()">Mostrar valor</button>
+
+        <button mat-raised-button color="accent" routerLink="/session5/producto">componente2</button>
+        <router-outlet></router-outlet>
+
+    </div>
+
+
+</div>

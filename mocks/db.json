@@ -1,0 +1,56 @@
+{
+  "productos": [
+    {
+      "id": 5,
+      "nombre": "Smartphone Xiaomi",
+      "stock": "11",
+      "precio": "1999.99",
+      "fecha": "2021-07-28T05:14:49.021Z"
+    },
+    {
+      "id": 6,
+      "nombre": "Cable usb",
+      "stock": "100",
+      "precio": "10",
+      "fecha": "2021-07-22T01:01:57.345Z"
+    },
+    {
+      "id": 7,
+      "nombre": "Mouse logitech",
+      "stock": "10",
+      "precio": "20",
+      "fecha": "2021-07-22T01:50:47.086Z"
+    },
+    {
+      "id": 8,
+      "nombre": "Teclado micronics",
+      "stock": "100",
+      "precio": "25.99",
+      "fecha": "2021-07-22T01:52:10.641Z"
+    },
+    {
+      "id": 9,
+      "nombre": "Bateria Hp",
+      "stock": "10",
+      "precio": "70",
+      "fecha": "2021-07-28T05:15:48.536Z"
+    }
+  ],
+  "frameworks": [
+    {
+      "id": 1,
+      "nombre": "Angular",
+      "anio": 2016
+    },
+    {
+      "id": 2,
+      "nombre": "Vue JS",
+      "anio": 2012
+    },
+    {
+      "id": 3,
+      "nombre": "React",
+      "anio": 2011
+    }
+  ]
+}

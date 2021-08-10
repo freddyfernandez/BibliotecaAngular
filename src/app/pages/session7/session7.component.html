@@ -1,0 +1,40 @@
+<div class="contenedor">
+    <div class="ventana">
+        <p>SESION7</p>
+        <p><br></p>
+        <p>Modulos: es una clase que tiene un decorador NgModule que nos permiten organizar y asociar las rutas.</p>
+        <p><br></p>
+        <p>El decorador se identifica como una clase. toma un objeto de metadatos que le dice a Angular c&oacute;mo compilar e iniciar la aplicaci&oacute;n</p>
+        <p><br></p>
+        <p>ARRAYS DE LOS MODULOS</p>
+        <p>declaraciones: se agregan componentes, directivas y pipes de forma privada.</p>
+        <p>importaciones: se agregan los modulos de angular y personalizados</p>
+        <p>proveedores: se agregan los servicios.</p>
+        <p>bootstrap: se agrega el componente ra&iacute;z que Angular crea e inserta en la index.html p&aacute;gina web del host.</p>
+        <p>export: se exporta solo los componentes especificos caso contrario por defecto se exporta todo.</p>
+        <p><br></p>
+        <p>LAZY LOADING: acelera el tiempo de peticiones, retrasando la descarga de archivos hasta que sea necesario para &nbsp;</p>
+        <p>- se una solo para modulos, no para componentes</p>
+        <p><br></p>
+        <p>MIROUTINGMODULE = RouterModule.forRoot(AppRoutes, useHash: true ),&nbsp;</p>
+        <p><br></p>
+        <p>DUPLICAR SERVICIOS DIRECTIVAS,COMPONENTES O PIPES EN DIFERENTES MODULOS PRODUCE INCONCISTENCIA</p>
+        <p><br></p>
+        <p>Crear modulos de referencias y de rutas: ng generate module prueba --routing</p>
+        <p><br></p>
+        <p>los nuevos modulos creados se declaran en el app routing, no es necesario importarlo en el app module</p>
+        <p><br></p>
+        <p>libros recomendado: clean arquitect</p>
+    </div>
+    <div class="ventana">
+
+        <h1>Rutas</h1>
+
+        <button mat-raised-button color="primary" routerLink="/session7/componente1">componente1</button>
+        <button mat-raised-button color="accent" routerLink="/session7/componente2">componente2</button> {{contador}}
+        <router-outlet></router-outlet>
+
+    </div>
+
+
+</div>

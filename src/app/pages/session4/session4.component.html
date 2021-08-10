@@ -1,0 +1,35 @@
+<div class="contenedor">
+    <div class="ventana">
+        <p>SESSION 4</p>
+        <p><br></p>
+        <p>PIPES:</p>
+        <p><br></p>
+        <p>-es una clase que tiene como decorador @pipes&nbsp;</p>
+        <p>&nbsp;sirve para la transfomaci&oacute;n de datos de las vistas,</p>
+        <p>&nbsp;para fechas,monedas,formatos de datos en json</p>
+        <p>-dentro de la libreria CommonModule : &apos;@angular/common&apos;</p>
+        <p><br></p>
+        <p>COMUNICACIONES ENTE COMPONENTES:</p>
+        <p>dentro de la libreria &apos;@angular/core&apos;</p>
+        <p><br></p>
+        <p>-@input:de padre a hijo asignacion de valores</p>
+        <p>-@output: de hijo a padre en enventos click</p>
+        <p><br></p>
+        <p>Renderer2: a&ntilde;ade de manera seguro de estilos y clases a un elemento</p>
+        <p><br></p>
+        <p>icon=&quot;ic&quot; = [icon]=&quot;&apos;ic&apos;&quot;</p>
+        <p><br></p>
+        <p>importar pipes en declaration module</p>
+        <p><br></p>
+        <p>directivas perzonalizadas</p>
+        <p>directivas de atributo&nbsp;</p>
+        <p>directivas estructurales</p>
+
+    </div>
+    <div class="ventana">
+        <p>{{today| date:'shortTime'}}</p>
+        <app-sessionhijo *ngFor="let course of courses; let index=index" [sesionNumber]="index" [title]="course.title" (onCourseClick)="onCourseClick($event)"></app-sessionhijo>
+
+    </div>
+
+</div>

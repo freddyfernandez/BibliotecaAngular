@@ -1,0 +1,23 @@
+<h2>Agregar datos Componente1</h2>
+<fieldset>
+    <div>
+        <label for="">Nombre:</label>
+        <input [(ngModel)]="nombre" />
+        <p>data desde el mismo componente: {{nombre}}</p>
+
+    </div>
+    <div>
+        <label for="">Apellido:</label>
+        <input [(ngModel)]="apellido" />
+        <p>data desde el mismo componente: {{apellido}}</p>
+
+    </div>
+    <div>
+        <label>Edad:</label>
+        <input [(ngModel)]="edad" type="number" />
+        <p>data desde el mismo componente: {{edad}}</p>
+    </div>
+    <button (click)="setValue()">Enviar</button>
+
+
+</fieldset>

@@ -1,0 +1,52 @@
+<div class="contenedor">
+    <div class="ventana">
+        <p>SESION 1</p>
+        <p>WEBPACK DE ANGULAR:Empaquetador de modulos BUNDLE.JS para compilar un proyecto</p>
+        <p><br></p>
+        <p>La instalaci&oacute;n del angular cli debe ser global para ser instalado desde cualquier directorio</p>
+        <p><br></p>
+        <p>CARPETA APP: crear componentes, directivas,etc</p>
+        <p><br></p>
+        <p>ANGULAR JSON: configuracion de archivos js</p>
+        <p><br></p>
+        <p>PACKAJE.JSON: gestiona las versionas de los compiladores</p>
+        <p><br></p>
+        <p>ts.config: gestion de Emacscripts</p>
+        <p><br></p>
+        <p>APP MODULE: declaramos la instancia para que este disponible en toda la aplicacion:</p>
+        <p>- declaration: van los componentes</p>
+        <p>- Import Module: van los modulos o logica&nbsp;</p>
+        <p><br></p>
+        <p>APP-ROOT: Es un componente padre de la aplicacion</p>
+        <p><br></p>
+        <p>Templates:&nbsp;</p>
+        <p>- parent component(componente padre): Se implementa Property binding</p>
+        <p>- parent template(child component): Se implementa Event binding</p>
+        <p><br></p>
+        <p>Data Bindings: Comunicacion entre el .ts y .html</p>
+        <p>- interpolation: doble comillas(data)</p>
+        <p>- property binding = [propiedad]=&quot;data&quot;</p>
+        <p>&nbsp;</p>
+        <p>Directivas:ng g c,etc</p>
+        <p><br></p>
+        <p>DECORADOR: @component ,@input</p>
+        <p><br></p>
+        <p>component.ts: es una clase que viene declarado con una anotacion @component</p>
+        <p>declarada al inicio como variable y esta viene ser de tipo de la libreria angular core</p>
+        <p><br></p>
+        <p>ROUTER OULET: importa el array de componentes para estar en la url</p>
+        <p><br></p>
+        <p>EL PRIMER ELEMENTO EN EJCUTARSE EN UN COMPONENT ES EL CONSTRUCTOR, LUEGO EL NGONINIT</p>
+        <p><br></p>
+        <p>INPUT: es un evento para pasarle data del padre al hijo</p>
+        <p><br></p>
+        <p>INJECCION DE DEPENDENCIAS: atraves del constructor invocar datos de otras clases&nbsp;</p>
+    </div>
+    <div class="ventana">
+        <button mat-raised-button color="primary" routerLink="/home">Home</button>
+        <button mat-raised-button color="accent" routerLink="/courses">Courses</button>
+        <button mat-raised-button color="warning" routerLink="/about">About</button>
+        <router-outlet></router-outlet>
+    </div>
+
+</div>

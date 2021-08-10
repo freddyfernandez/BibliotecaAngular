@@ -1,0 +1,53 @@
+<p>session3 works!</p>
+
+<p>SESION 3</p>
+<p><br></p>
+<p>GIT: Almacenamiento virtual de un proyecto</p>
+<p>crear repositorio nube:</p>
+<p>&nbsp;- https://github.com/freddyfernandez/RamasAngular.git</p>
+<p>crear repositorio local y subirlo a la nube</p>
+<p><br></p>
+<p>&nbsp;- git init</p>
+<p>&nbsp;- git add .</p>
+<p>&nbsp;- git commit -m &quot;first commit&quot;</p>
+<p>&nbsp;- git remote add origin https://github.com/freddyfernandez/RamasAngular.git(la primera vez)</p>
+<p>&nbsp;- git push -u origin master(la primera vez)</p>
+<p><br></p>
+<p>crear ramas de trabajo:</p>
+<p>&nbsp;rama area1:&nbsp;</p>
+<p>- git checkout -b develop : crea y cambia de master a develop</p>
+<p>- git push origin develop</p>
+<p>- git checkout master: regresa de develop a master</p>
+<p>&nbsp;rama area2:</p>
+<p>- git checkout -b devlocal</p>
+<p>- git push origin devlocal</p>
+<p><br></p>
+<p>Subir nuevos cambios al repositorio en la nube</p>
+<p>- git add .</p>
+<p>- git status</p>
+<p>- git commit -m &quot;comentario&quot;</p>
+<p>- git push origin branch-fernandez&quot;(mi rama)</p>
+<p>- git pull</p>
+<p>- git merge devlocal --no-ff(otra rama)</p>
+<p><br></p>
+<p>Migrar Rama:</p>
+<p>- merge: siver parsa unir dos ramas</p>
+<p>- &gt;&gt;&gt;&gt;HEAD : la rama actual&nbsp;</p>
+<p>- no hacer merge sin bajar los cambios de la nube: hacer pull</p>
+<p>- git merge &quot;rama padre&quot; --no-ff</p>
+<p><br></p>
+<p>Copiar rama</p>
+<p>-git pull origin devlocal</p>
+<p>-git merge devlocal --no-ff</p>
+<p>-git checkout devlocal(entrar a la rama)</p>
+<p>-accept current changes</p>
+<p><br></p>
+<p>Ver historial de cambios</p>
+<p>- git log</p>
+<p>- regresar a un commit anterior: git reset --hard HEAD~1</p>
+<p><br></p>
+<p>Paquetes para VSCODE:</p>
+<p>- GitLens- Git supercharged</p>
+<p>- Git Tree Compare</p>
+<p>- Git Merger</p>
+<p>- Git History Diff</p>
